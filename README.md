@@ -1,5 +1,5 @@
 # Projet microservice – backend + gateway
-Niveau langue : français simple (A2/B1). Objectif : lancer le gateway et les 3 microservices (users, trips, reservations) en local.
+Objectif : lancer le gateway et les 3 microservices (users, trips, reservations) en local.
 
 ## Prérequis
 - Node.js 18+ et npm
