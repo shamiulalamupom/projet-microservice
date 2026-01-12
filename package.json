@@ -7,7 +7,8 @@
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:services": "concurrently -n USERS,TRIPS,RESERVATIONS \"npm -w apps/users-service run dev\" \"npm -w apps/trips-service run dev\" \"npm -w apps/reservations-service run dev\""
+    "dev:services": "concurrently -n USERS,TRIPS,RESERVATIONS \"npm -w apps/users-service run dev\" \"npm -w apps/trips-service run dev\" \"npm -w apps/reservations-service run dev\"",
+    "dev:backend": "concurrently -n GATEWAY,USERS,TRIPS,RESERVATIONS \"npm -w apps/gateway run dev\" \"npm -w apps/users-service run dev\" \"npm -w apps/trips-service run dev\" \"npm -w apps/reservations-service run dev\""
   },
   "repository": {
     "type": "git",
