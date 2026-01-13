@@ -1,0 +1,28 @@
+{
+  "name": "projet-microservice",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:services": "concurrently -n USERS,TRIPS,RESERVATIONS \"npm -w apps/users-service run dev\" \"npm -w apps/trips-service run dev\" \"npm -w apps/reservations-service run dev\"",
+    "dev:backend": "concurrently -n GATEWAY,USERS,TRIPS,RESERVATIONS \"npm -w apps/gateway run dev\" \"npm -w apps/users-service run dev\" \"npm -w apps/trips-service run dev\" \"npm -w apps/reservations-service run dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamiulalamupom/projet-microservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shamiulalamupom/projet-microservice/issues"
+  },
+  "homepage": "https://github.com/shamiulalamupom/projet-microservice#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
