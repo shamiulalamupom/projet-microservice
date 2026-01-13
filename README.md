@@ -1,6 +1,12 @@
 # Projet microservice – backend + gateway
 Objectif : lancer le gateway et les 3 microservices (users, trips, reservations) en local.
 
+## Membres du Groupe:
+Alpha S. DIALLO
+Shamiul ALAM UPOM
+Sharad BHUSAL
+
+
 ## Prérequis
 - Node.js 18+ et npm
 - MongoDB accessible (local ou distant)
